@@ -8,7 +8,7 @@ const Pie = () => {
       chart: {
         type: "donut",
       },
-      colors: ["#999", "#B4CEFF", "#999", "#999", "#999", "#999"],
+      colors: ["#e0e0e0", "#B4CEFF", "#e0e0e0", "#e0e0e0", "#e0e0e0", "#e0e0e0"],
       plotOptions: {
         pie: {
           expandOnClick: true,
