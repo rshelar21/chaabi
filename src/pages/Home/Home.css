@@ -1,0 +1,11 @@
+.home__body{
+    display: flex;
+    width: 100%;
+    position: relative;
+    max-height: 100vh;
+}
+@media screen and (max-width: 768px) {
+    .home__body{
+        flex-direction: column;
+    }
+}

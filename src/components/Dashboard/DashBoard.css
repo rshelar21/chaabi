@@ -1,0 +1,107 @@
+.dashboard__body{
+    background-color: var(--light_blue);
+    width: 100%;
+    padding-bottom: 10px;
+    overflow-y: scroll;
+}
+/* make scrollbar transparent */
+.dashboard__body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+.dashboard__header{
+    height: 145px;
+    border-radius: 0px 0px 10px 10px;
+    background-image: url('/public/assets/header.svg');
+    background-repeat: no-repeat;
+    padding-left: 34px;
+    padding-top: 25px;
+}
+
+.header__title{
+    color : #ffffff;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+.header__description{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+.chart__section{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.chart__container{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.chart__container_body{
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) minmax(350px, 1fr) minmax(530px, 1fr);;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.chart__container__middle{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 1250px) {
+    .chart__container{
+        grid-template-columns: repeat(3, minmax(0px, 1fr));
+    }
+    .chart__container_body{
+        grid-template-columns: minmax(0px, 1fr) minmax(0px, 1fr);
+    }
+
+}
+@media screen and (max-width: 900px) {
+    .chart__container_body{
+        grid-template-columns: repeat(1, minmax(0px, 1fr));
+    }
+}
+@media screen and (max-width: 1050px) {
+    .chart__container{
+        grid-template-columns: repeat(2, minmax(0px, 1fr));
+    }
+    .chart__container__middle{
+        grid-template-columns: repeat(2, minmax(0px, 1fr));
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .chart__container{
+        grid-template-columns: repeat(1, minmax(0px, 1fr));
+    }
+    .chart__container__middle{
+        display: flex;
+        flex-direction: column;
+    }
+    .header__title{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 140%;
+    }
+    .header__description{
+        font-size: 13px;
+    }
+    .dashboard__header{
+        padding-left: 15px;
+        padding-top: 15px;
+        height: 100px;
+        padding-right: 10px;
+    }
+
+}

@@ -1,0 +1,125 @@
+.sidebar__body{
+    background-color: #ffffff;
+    width: 350px;
+    position: relative;
+    height: 100vh;
+}
+
+.sidebar__logo{
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--grey);
+}
+
+.siderbar__links{
+    padding-top: 29px;
+    padding-right: 26px;
+    padding-left: 35px;
+}
+.links__list{
+    list-style: none;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    color : var(--primary);
+    text-decoration: none;
+    padding-left: 20px;
+    gap: 10px;
+}
+.list__item{
+    padding-bottom: 12px;
+}
+.active__link{
+    background-color: var(--primary);
+    color : #ffffff;
+    border-radius: 5px;
+}
+.link__title{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 140%;
+}
+.sidebar__icon{
+    font-size: 24px;
+}
+.menu__bar{
+    display: none;
+}
+.active__tab{
+    position: relative;
+    box-shadow: none;
+    background-color: #ffffff;
+    width: 350px;
+    height: 100vh;   
+}
+
+.cancel__btn{
+    padding: 10px;
+    display: none;
+}
+.menu__icon{
+    color : var(--primary);
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close__icon{
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+    .sidebar__body{
+        display: none;
+    }
+    .menu__bar{
+        display: flex;
+        padding: 10px;
+        background-color: #ffffff;
+    }
+    .active__tab{
+        z-index: 99;
+        position: fixed;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        background-color: #ffffff;
+        width: 350px;
+        height: 100vh;   
+    }
+    .cancel__btn{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width: 1000px){
+    .link{
+        padding-left: 10px;
+    }
+    .siderbar__links{
+        padding-left: 20px;
+    }
+    .link__title{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140%;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .sidebar__body{
+        width: 300px;
+    }
+    .sidebar__logo{
+        padding: 20px 0;
+    }
+    .siderbar__links{
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 30px;
+    }
+
+}
+

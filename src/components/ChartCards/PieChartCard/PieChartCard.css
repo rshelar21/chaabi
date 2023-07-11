@@ -1,0 +1,54 @@
+.pie__body{
+    display: inline-block;
+    padding: 20px 17px 20px 17px;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px #B4CEFF;
+    grid-column: 1/2;
+}
+.pie__heading{
+    color : var(--grey_light);
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    text-transform: capitalize;
+    display: flex;
+    width: 100%;
+}
+
+.piechart__decription{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 10px;
+
+}
+.dot__body{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+.dot__body:last-child{
+    padding-bottom: 0px;
+}
+.dots{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    
+}
+.dots__headline{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: var(--grey_light);
+}
