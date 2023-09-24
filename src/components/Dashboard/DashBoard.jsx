@@ -18,7 +18,7 @@ const DashBoard = () => {
         <div className="dashboard__header">
           <h1 className="header__title">hello, Puneet Dhiman</h1>
           <p className="header__description">
-            following is your organization’s performance summary
+            following is your organization’s performance summary.
           </p>
         </div>
 
